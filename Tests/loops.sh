@@ -4,7 +4,8 @@ i=1 # i = 1 is invalid, dont use spaces
 while [ $i -le 3 ] # -le less than or equal to
 do
     echo $i
-    ((i++)) # double parentheses
+    #((i++)) # double parentheses
+    i=$(($i+1))
 done
 
 echo "While loop done!"
@@ -14,7 +15,8 @@ j=1
 until [ $j -gt 3 ]
 do
     echo $j
-    ((j++))
+    #((j++))
+    j=$(($j+1))
 done
 
 echo "Until loop done!"
