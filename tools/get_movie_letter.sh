@@ -3,7 +3,6 @@
 # ,, = to lowercase
 
 DIR=$( basename "$1" ) # get base of path
-echo $DIR
 THE="${DIR:0:4}"
 
 if [ "${THE,,}" == "the." ]; then
